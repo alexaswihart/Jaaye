@@ -22,4 +22,8 @@ export class AppComponent {
       this.scrolled = false;
     }
   }
+
+  @HostListener("window:beforeunload", ["$event"]) unloadHandler(event: Event) {
+    window.scrollTo(0,0);
+  }
 }

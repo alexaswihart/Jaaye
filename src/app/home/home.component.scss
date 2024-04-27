@@ -39,3 +39,41 @@ a:hover.readMore {
     position: absolute;
     margin-top: 100px;
 }
+
+a.button {
+    background-color: $lightBlue !important;
+    color: $navy !important;
+    text-shadow: none !important;
+    height: 50px;
+}
+
+a:hover.button {
+    background-color: $lightGrayTransparent !important;
+}
+
+.infoContainer {
+    height: 450px;
+    width: 750px;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+}
+
+img.crashLanding {
+    height: 400px;
+    margin: auto;
+}
+
+img.intiative {
+    height: 400px;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.shortLine {
+    width: 50px !important;
+    height: 0;
+    border: 1px solid $lightGray;
+    margin: 3px;
+    display:inline-block;
+}

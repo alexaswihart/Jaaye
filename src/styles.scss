@@ -1,6 +1,7 @@
-$lightBlue: #639cd9;
 $lightGray: #e8f0f7;
 $lightGrayTransparent: #e8f0f744;   //#e8f0f73a; //#e8f0f76e;
+$lightBlue: #639cd9;
+$mediumBlue: #13273e;
 $navy: #0b1623;
 $darkBlue: #101415;
 
@@ -34,10 +35,20 @@ a:hover { text-decoration: none !important; color: $lightBlue !important; text-s
     align-items: center;
 }
 
-.lightBlue { color: $lightBlue; }
 .lightGray { color: $lightGray; }
+.lightBlue { color: $lightBlue; }
+.medBlueBg { background-color: $mediumBlue; }
 .navy { color: $navy; }
 .darkBlue { color: $darkBlue; }
+
+.lightGrayBg { background-color: $lightGray; }
+.lightBlueBg { background-color: $lightBlue; }
+.medBlueBg { background-color: $mediumBlue; }
+.navyBg { background-color: $navy; }
+.darkBlueBg { background-color: $darkBlue; }
+
+.bold { font-weight: bold; }
+.center { text-align: center; }
 
 /*
 Fonts:
