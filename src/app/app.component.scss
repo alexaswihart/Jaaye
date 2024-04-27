@@ -1,0 +1,82 @@
+@import './../styles.scss';
+
+app-root {
+    display: block;
+    height: 100%;
+}
+
+mat-toolbar {
+    background-color: transparent !important;
+    padding: 10px;
+    transition: .3s;
+}
+
+mat-toolbar.max {
+    background-color: transparent !important;
+    padding-top: 25px;
+}
+
+mat-toolbar.min {
+    background-color: $darkBlue !important;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav.max {
+    color: $lightGray;
+}
+
+nav.min {
+    color: $lightBlue;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    border-radius: 3rem;
+    padding: 7px;
+    background-color: $lightGrayTransparent;
+}
+
+nav ul li a {
+    padding: .5rem;
+    cursor: pointer;
+    font-size: medium !important;
+}
+
+img {
+    transition: .3s;
+    padding-bottom: 15px;
+}
+
+img.min { 
+    width: 175px !important; 
+}
+
+img.max { 
+    width: 275px !important; 
+}
+
+section {
+    margin-left: 20px;
+}
+
+a.mailingList {
+    background-color: $lightBlue !important;
+    color: $navy !important;
+    text-shadow: none !important;
+    height: 50px;
+}
+
+a:hover.mailingList {
+    background-color: $lightGrayTransparent !important;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}

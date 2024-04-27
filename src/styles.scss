@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+$lightBlue: #639cd9;
+$lightGray: #e8f0f7;
+$lightGrayTransparent: #e8f0f744;   //#e8f0f73a; //#e8f0f76e;
+$navy: #0b1623;
+$darkBlue: #101415;
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0 !important;
+}
+
+a { text-decoration: none !important; color: $lightGray; text-shadow: 0.5px 0.5px 2px $navy; }
+a:visited { text-decoration: none !important; color: $lightGray; }
+a:hover { text-decoration: none !important; color: $lightBlue !important; text-shadow: 0.5px 0.5px 1px $navy !important; }
+.active { text-decoration: none !important; color: $lightBlue !important; text-shadow: 0.5px 0.5px 1px $navy !important; }
+
+.title {
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.paragraph {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightBlue { color: $lightBlue; }
+.lightGray { color: $lightGray; }
+.navy { color: $navy; }
+.darkBlue { color: $darkBlue; }
+
+/*
+Fonts:
+Title Font: Source Sans Pro
+Paragraph Font: Lato
+*/

@@ -1,0 +1,41 @@
+@import '../../styles.scss';
+
+.background {
+    background-image: url("../../images/jaaye-thingy-3-jpg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    padding-left: 100px;
+}
+
+.container {
+    justify-content: left !important;
+}
+
+a.readMore {
+    background-color: transparent !important;
+    border: 2px solid $lightBlue !important;
+    color: $lightGray !important;
+    text-shadow: none !important;
+    height: 75px;
+    font-size: large;
+}
+
+a:hover.readMore {
+    background-color: $lightGrayTransparent !important;
+    color: $lightGray !important;
+    border: 4px solid $lightBlue !important;
+}
+
+.line {
+    width: 150px;
+    height: 0;
+    border: 1px solid $lightGray;
+    margin: 3px;
+    display:inline-block;
+}
+
+.buttonContainer {
+    position: absolute;
+    margin-top: 100px;
+}
