@@ -14,23 +14,23 @@
 
 a.readMore {
     background-color: transparent !important;
-    border: 2px solid $lightBlue !important;
-    color: $lightGray !important;
+    border: 2px solid $primaryLight !important;
+    color: $secondaryLight !important;
     text-shadow: none !important;
     height: 75px;
     font-size: large;
 }
 
 a:hover.readMore {
-    background-color: $lightGrayTransparent !important;
-    color: $lightGray !important;
-    border: 4px solid $lightBlue !important;
+    background-color: $transparent !important;
+    color: $secondaryLight !important;
+    border: 4px solid $primaryLight !important;
 }
 
 .line {
     width: 150px;
     height: 0;
-    border: 1px solid $lightGray;
+    border: 1px solid $secondaryLight;
     margin: 3px;
     display:inline-block;
 }
@@ -41,14 +41,14 @@ a:hover.readMore {
 }
 
 a.button {
-    background-color: $lightBlue !important;
-    color: $navy !important;
+    background-color: $primaryLight !important;
+    color: $primaryDark !important;
     text-shadow: none !important;
     height: 50px;
 }
 
 a:hover.button {
-    background-color: $lightGrayTransparent !important;
+    background-color: $transparent !important;
 }
 
 .infoContainer {
@@ -73,7 +73,7 @@ img.intiative {
 .shortLine {
     width: 50px !important;
     height: 0;
-    border: 1px solid $lightGray;
+    border: 1px solid $secondaryLight;
     margin: 3px;
     display:inline-block;
 }

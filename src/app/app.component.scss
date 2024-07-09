@@ -17,7 +17,7 @@ mat-toolbar.max {
 }
 
 mat-toolbar.min {
-    background-color: $darkBlue !important;
+    background-color: $secondaryDark !important;
 }
 
 nav {
@@ -25,11 +25,11 @@ nav {
 }
 
 nav.max {
-    color: $lightGray;
+    color: $secondaryLight;
 }
 
 nav.min {
-    color: $lightBlue;
+    color: $primaryLight;
 }
 
 nav ul {
@@ -38,7 +38,7 @@ nav ul {
     padding-left: 0;
     border-radius: 3rem;
     padding: 7px;
-    background-color: $lightGrayTransparent;
+    background-color: $transparent;
 }
 
 nav ul li a {
@@ -65,18 +65,28 @@ section {
 }
 
 a.mailingList {
-    background-color: $lightBlue !important;
-    color: $navy !important;
+    background-color: $primaryLight !important;
+    color: $primaryDark !important;
     text-shadow: none !important;
     height: 50px;
 }
 
 a:hover.mailingList {
-    background-color: $lightGrayTransparent !important;
+    background-color: $transparent !important;
 }
 
 .fixed {
     position: fixed;
     z-index: 2;
     width: 100%;
+}
+
+.footerContainer {
+    height: 400px;
+    display: flex;
+}
+
+.footerBox {
+    height: 100%;
+    width: 50%
 }
