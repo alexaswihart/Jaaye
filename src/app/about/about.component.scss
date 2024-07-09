@@ -4,3 +4,77 @@
     background-size: 100% auto;
     background-position: center top;
 }
+
+.container {
+    justify-content: left !important;
+}
+
+.infoContainer {
+    height: 350px;
+    width: 750px;
+    margin: auto;
+    padding: 20px;
+}
+
+.round-bottom { 
+    border-bottom-left-radius: 100% 50px;
+    border-bottom-right-radius: 25% 70px;
+    margin-bottom: -100px;
+    position: relative;
+}
+
+.fadedBorder {
+    background-image: linear-gradient(to bottom, #0b162300, #0b1623);
+    height: 15%;
+    width: 100%;
+    align-self: end;
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.aboutTitle {
+    position: absolute;
+}
+
+.aboutInfo {
+    font-weight: 500;
+    margin-top: 100px;
+    line-height: 30px;
+}
+
+.bandContainer {
+    width: 750px;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.bandHeader {
+    position: absolute;
+    text-align: center;
+}
+
+.band {
+    position: relative;
+    padding-top: 150px !important;
+    padding: 50px;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+img {
+    height: 200px;
+    border-radius: 100%;
+}
+
+h3 {
+    padding-bottom: 20px;
+}

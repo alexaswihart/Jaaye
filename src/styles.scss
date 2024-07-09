@@ -1,31 +1,27 @@
-$lightGray: #e8f0f7;
-$lightGrayTransparent: #e8f0f744;   //#e8f0f73a; //#e8f0f76e;
-$lightBlue: #639cd9;
-$mediumBlue: #13273e;
-$navy: #0b1623;
-$darkBlue: #101415;
+$secondaryLight: #e8f0f7;
+$transparent: #e8f0f744;   //#e8f0f73a; //#e8f0f76e;
+$primaryLight: #a4c5e8;  //#639cd9; - commented is from colors doc - used is from current site
+$primaryMedium: #13273e;
+$primaryDark: #0b1623;
+$secondaryDark: #101415;
 
 body, html {
     height: 100%;
     width: 100%;
     margin: 0 !important;
-}
-
-a { text-decoration: none !important; color: $lightGray; text-shadow: 0.5px 0.5px 2px $navy; }
-a:visited { text-decoration: none !important; color: $lightGray; }
-a:hover { text-decoration: none !important; color: $lightBlue !important; text-shadow: 0.5px 0.5px 1px $navy !important; }
-.active { text-decoration: none !important; color: $lightBlue !important; text-shadow: 0.5px 0.5px 1px $navy !important; }
-
-.title {
-    font-family: "source-sans-pro", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.paragraph {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-style: italic;
+}
+
+a, a:visited { text-decoration: none !important; color: $primaryLight; text-shadow: 0.5px 0.5px 2px $primaryDark; }
+a:hover { text-decoration: none !important; color: $secondaryLight !important; text-shadow: 0.5px 0.5px 1px $primaryDark !important; }
+.active { text-decoration: none !important; color: $primaryLight !important; text-shadow: 0.5px 0.5px 1px $primaryDark !important; border-bottom: 2px solid $primaryLight;}
+
+.title {
+    font-family: "source-sans-pro", sans-serif !important;
+    font-weight: 300 !important;
+    font-style: italic !important;
 }
 
 .container {
@@ -35,20 +31,23 @@ a:hover { text-decoration: none !important; color: $lightBlue !important; text-s
     align-items: center;
 }
 
-.lightGray { color: $lightGray; }
-.lightBlue { color: $lightBlue; }
-.medBlueBg { background-color: $mediumBlue; }
-.navy { color: $navy; }
-.darkBlue { color: $darkBlue; }
+.secondaryLight { color: $secondaryLight; }
+.primaryLight { color: $primaryLight; }
+.primaryMedium { background-color: $primaryMedium; }
+.primaryDark { color: $primaryDark; }
+.secondaryDark { color: $secondaryDark; }
 
-.lightGrayBg { background-color: $lightGray; }
-.lightBlueBg { background-color: $lightBlue; }
-.medBlueBg { background-color: $mediumBlue; }
-.navyBg { background-color: $navy; }
-.darkBlueBg { background-color: $darkBlue; }
+.secondaryLightBg { background-color: $secondaryLight; }
+.primaryLightBg { background-color: $primaryLight; }
+.primaryMediumBg { background-color: $primaryMedium; }
+.primaryDarkBg { background-color: $primaryDark; }
+.secondaryDarkBg { background-color: $secondaryDark; }
 
 .bold { font-weight: bold; }
 .center { text-align: center; }
+
+.left { float:left; }
+.right { float:right; }
 
 /*
 Fonts:
