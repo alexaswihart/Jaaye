@@ -6,39 +6,31 @@ app-root {
 }
 
 mat-toolbar {
-    background-color: transparent !important;
+    background-color: $secondaryDark !important;
     padding: 10px;
     transition: .3s;
 }
 
-mat-toolbar.max {
-    background-color: transparent !important;
-    padding-top: 25px;
+mat-toolbar-row {
+    transition: .3s;
 }
 
-mat-toolbar.min {
-    background-color: $secondaryDark !important;
+mat-toolbar-row.max {
+    height: 70px !important;
+}
+
+mat-toolbar-row.min {
+    height: 60px !important;
 }
 
 nav {
     margin-left: auto;
-}
-
-nav.max {
-    color: $secondaryLight;
-}
-
-nav.min {
-    color: $primaryLight;
+    padding-top: 5px;
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
-    padding-left: 0;
-    border-radius: 3rem;
-    padding: 7px;
-    background-color: $transparent;
 }
 
 nav ul li a {
@@ -49,7 +41,6 @@ nav ul li a {
 
 img {
     transition: .3s;
-    padding-bottom: 15px;
 }
 
 img.min { 
@@ -58,6 +49,7 @@ img.min {
 
 img.max { 
     width: 275px !important; 
+    margin-top: 20px;
 }
 
 section {

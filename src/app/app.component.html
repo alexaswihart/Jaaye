@@ -1,20 +1,31 @@
 <div class="fixed title">
   <mat-toolbar [ngClass]="{max: !scrolled, min: scrolled}">
-    <mat-toolbar-row>
-      <img src="../images/jaaye-starlight-logo.png" [ngClass]="{max: !scrolled, min: scrolled}">
-      <nav class="stroke" [ngClass]="{max: !scrolled, min: scrolled}">
-        <ul>
-          <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Home</a></li>
-          <li><a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>About</a></li>
-          <li><a routerLink="/music" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Music</a></li>
-          <li><a routerLink="/calendar" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Calendar</a></li>
-          <li><a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Contact</a></li>
-          <li><a href="https://linktr.ee/jaaye" target="_blank">Linktree</a></li>
-        </ul>
-      </nav>
-      <section>
+    <mat-toolbar-row [ngClass]="{max: !scrolled, min: scrolled}">
+      <div class="left" style="width: 15%;">
+        <h1>Socials here***</h1>
+      </div>
+      <div style="text-align: center; width: 70%;">
+        <img src="../images/jaaye-starlight-logo.png" [ngClass]="{max: !scrolled, min: scrolled}">
+      </div>
+      <div class="right" style="width: 15%;">
+        <section>
           <a class="mailingList" mat-raised-button href="https://jaaye.ck.page/subscribe2" target="_blank">Mailing List</a>
-      </section>
+        </section>
+      </div>
+    </mat-toolbar-row>
+    <mat-toolbar-row [ngClass]="{max: !scrolled, min: scrolled}"> 
+      <div style="margin: auto;">  
+        <nav [ngClass]="{max: !scrolled, min: scrolled}">
+          <ul>
+            <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Home</a></li>
+            <li><a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>About</a></li>
+            <li><a routerLink="/music" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Music</a></li>
+            <li><a routerLink="/calendar" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Calendar</a></li>
+            <li><a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Contact</a></li>
+            <li><a href="https://linktr.ee/jaaye" target="_blank">Linktree</a></li>
+          </ul>
+        </nav>
+      </div> 
     </mat-toolbar-row>
   </mat-toolbar>
 </div>
@@ -25,6 +36,16 @@
     <div class="primaryMediumBg footerBox">
       <div style="padding-left: 10%;">
         <h1 class="primaryLight">Jaaye</h1>
+        <nav class="stroke" [ngClass]="{max: !scrolled, min: scrolled}">
+          <ul>
+            <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Home</a></li>
+            <li><a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>About</a></li>
+            <li><a routerLink="/music" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Music</a></li>
+            <li><a routerLink="/calendar" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Calendar</a></li>
+            <li><a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Contact</a></li>
+            <li><a href="https://linktr.ee/jaaye" target="_blank">Linktree</a></li>
+          </ul>
+        </nav>
       </div>     
     </div>
     <div class="primaryDarkBg footerBox"></div>

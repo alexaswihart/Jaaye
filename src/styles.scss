@@ -14,22 +14,15 @@ body, html {
     font-style: italic;
 }
 
-a { text-decoration: none !important; color: $secondaryLight; text-shadow: 0.5px 0.5px 2px $primaryDark; }
-a:visited { text-decoration: none !important; color: $secondaryLight; }
-a:hover { text-decoration: none !important; color: $primaryLight !important; text-shadow: 0.5px 0.5px 1px $primaryDark !important; }
-.active { text-decoration: none !important; color: $primaryLight !important; text-shadow: 0.5px 0.5px 1px $primaryDark !important; }
+a, a:visited { text-decoration: none !important; color: $primaryLight; text-shadow: 0.5px 0.5px 2px $primaryDark; }
+a:hover { text-decoration: none !important; color: $secondaryLight !important; text-shadow: 0.5px 0.5px 1px $primaryDark !important; }
+.active { text-decoration: none !important; color: $primaryLight !important; text-shadow: 0.5px 0.5px 1px $primaryDark !important; border-bottom: 2px solid $primaryLight;}
 
 .title {
     font-family: "source-sans-pro", sans-serif !important;
     font-weight: 300 !important;
     font-style: italic !important;
 }
-
-/* .paragraph {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-} */
 
 .container {
     height: 100%;
@@ -52,6 +45,9 @@ a:hover { text-decoration: none !important; color: $primaryLight !important; tex
 
 .bold { font-weight: bold; }
 .center { text-align: center; }
+
+.left { float:left; }
+.right { float:right; }
 
 /*
 Fonts:
