@@ -6,7 +6,7 @@ app-root {
 }
 
 mat-toolbar {
-    background-color: $secondaryDark !important;
+    background-color: $transparent !important;
     padding: 10px;
     transition: .3s;
 }
@@ -57,8 +57,8 @@ section {
 }
 
 a.mailingList {
-    background-color: $primaryLight !important;
-    color: $primaryDark !important;
+    background-color: $primaryDark !important;
+    color: $primaryLight !important;
     text-shadow: none !important;
     height: 50px;
 }

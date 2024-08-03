@@ -1,9 +1,9 @@
-$secondaryLight: #e8f0f7;
-$transparent: #e8f0f744;   //#e8f0f73a; //#e8f0f76e;
-$primaryLight: #a4c5e8;  //#639cd9; - commented is from colors doc - used is from current site
-$primaryMedium: #13273e;
-$primaryDark: #0b1623;
-$secondaryDark: #101415;
+$secondaryLight: #f2d7b6;  //#f9f6ee;
+$transparent: #f9f6eea1;   //#e8f0f73a; //#e8f0f76e;
+$primaryLight:  #f9f6ee;    // #f2d7b6; 
+$primaryMedium: #f2ca80;
+$primaryDark: #d9a362;
+$secondaryDark: #28190e;
 
 body, html {
     height: 100%;
@@ -14,9 +14,9 @@ body, html {
     font-style: italic;
 }//
 
-a, a:visited { text-decoration: none !important; color: $primaryLight; text-shadow: 0.5px 0.5px 2px $primaryDark; }
-a:hover { text-decoration: none !important; color: $secondaryLight !important; text-shadow: 0.5px 0.5px 1px $primaryDark !important; }
-.active { text-decoration: none !important; color: $primaryLight !important; text-shadow: 0.5px 0.5px 1px $primaryDark !important; border-bottom: 2px solid $primaryLight;}
+a, a:visited { text-decoration: none !important; color: $secondaryDark; text-shadow: 0.5px 0.5px 2px $primaryDark; }
+a:hover { text-decoration: none !important; color: $secondaryDark !important; text-shadow: 0.5px 0.5px 1px $primaryDark !important; }
+.active { text-decoration: none !important; color: $primaryDark !important; text-shadow: 0.5px 0.5px 1px $secondaryDark !important; border-bottom: 2px solid $primaryLight;}
 
 .title {
     font-family: "source-sans-pro", sans-serif !important;
