@@ -1,8 +1,8 @@
 <div class="background container">
-    <div>
+    <div class="readMoreContainer">
         <div class="line"></div>
         <div>
-            <h1 class="secondaryLight readMore" style="position: absolute; font-weight: normal !important;">Learn more about us</h1>
+            <div class="secondaryLight readMoreText" style="position: absolute; font-weight: normal !important;">Learn more about us</div>
         </div>
         <div class="buttonContainer">
             <a class="readMore" mat-raised-button routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} target="_self">
@@ -12,12 +12,12 @@
         </div>
     </div>
 </div>
-<div class="primaryDarkBg" style="height:600px; display: flex; justify-content: center;">
+<div class="primaryDarkBg" style="display: flex; justify-content: center;">
     <div class="primaryMediumBg infoContainer">
-        <div style="display: inline-flex;">
+        <!--<div [ngClass]="{stacked: isMobile, notStacked: !isMobile}">
             <img class="crashLanding" src="../../images/Crash-Landing-Final.png">
         </div>
-        <div class="center" style="padding-left: 30px;">
+        <div class="center" style="padding-left: 5%;">
             <h1 class="primaryLight bold">Crash Landing is out NOW!</h1>
             <h4 class="primaryLight bold">
                 Crash Landing is OUT NOW! Dive into our latest single, available on all streaming platforms. We’ve poured our hearts into evolving our sound and are thrilled to take you along on our new artistic journey.<br><br>
@@ -27,24 +27,14 @@
             <a class="button bold" mat-raised-button routerLink="/music" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} target="_self">
                 Music
             </a>
-        </div>
+        </div>-->
     </div>
 </div>
 <div class="primaryLightBg" style="height: 600px;">
 
 </div>
-<div class="primaryDarkBg" style="height:600px; display: flex; justify-content: center;">
-    <div class="infoContainer">
-        <div style="display: inline-flex;">
-            <img class="intiative" src="../../images/jaaye2024-initiative.png">
-        </div>
-        <div class="center" style="align-content: center; padding-left: 30px;">
-            <div class="shortLine"></div>
-            <h1 class="secondaryLight bold">#jaaye2024 initiative</h1>
-            <h4 class="secondaryLight bold">Free live music in the Pittsburgh area for summer 2024 only!</h4>
-            <a class="button bold" mat-raised-button routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} target="_self">
-                Contact Us
-            </a>
-        </div>
-    </div>
+<div class="primaryMediumBg" style="text-align: center;">
+    <div style="font-size: 35px; padding-top: 30px;">Join our Patreon</div>
+    <div style="font-size: 15px; padding-top: 30px;">Gain access to behind-the-scenes content, sneak peaks, and more on our FREE Patreon</div>
+    <a class="patreon" style=" margin: 30px;" mat-raised-button href="https://www.patreon.com/Jaaye" target="_blank">Patreon</a>
 </div>

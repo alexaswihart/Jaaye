@@ -1,0 +1,104 @@
+@import '../../styles.scss';
+
+.eventContainer {
+    width:80%;
+    margin: auto;
+    padding-bottom:50px;
+}
+
+.header {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.secondaryHeader {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.detailsHeader {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.details {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.date {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.day {
+    font-weight: bold;
+    font-size: 60px !important;
+}
+
+.month {
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+img {
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+ 
+tr {
+    border-bottom: 1px solid $primaryDark;
+    margin-bottom: 15px;
+    display: block;
+}​
+
+tr:last-child { 
+    border-bottom: none; 
+}
+
+@media (min-width: 1001px) {
+    img {
+        width: 125px;
+    }
+    .calendarCol {
+        padding-bottom: 15px;
+        display: inline-block;
+    }
+
+    .calendarImg {
+        width: 150px;
+    }
+
+    .calendarDate {
+        width: 150px;
+    }
+
+    .calendarInfo {
+        min-width: 200px;
+        width:25%;
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    img {
+        width: 80%;
+    }
+
+    .calendarCol {
+        display: block;
+    }
+
+    .calendarDate {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

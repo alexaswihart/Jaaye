@@ -1,21 +1,41 @@
 <div class="fixed title">
   <mat-toolbar [ngClass]="{max: !scrolled, min: scrolled}">
-    <mat-toolbar-row [ngClass]="{max: !scrolled, min: scrolled}">
-      <div class="left" style="width: 15%;">
-        <h1>Socials here*** </h1>
-      </div>
-      <div style="text-align: center; width: 70%;">
-        <img src="../images/NEW jaaye logo png transparent.png" [ngClass]="{max: !scrolled, min: scrolled}">
-      </div>
-      <div class="right" style="width: 15%;">
-        <section>
-          <a class="mailingList" mat-raised-button href="https://jaaye.ck.page/subscribe2" target="_blank">Mailing List</a>
-        </section>
-      </div>
+    <mat-toolbar-row [ngClass]="{max: !scrolled, min: scrolled}" class="titleRow">
+        <div class="left socialsPanel">
+          <!--<h1>Socials here*** </h1>-->         
+        </div>
+        <div style="margin: auto;">
+          <img src="../images/NEW jaaye logo png transparent.png" [ngClass]="{max: !scrolled, min: scrolled}">
+        </div>
+        <div class="right">
+          <div *ngIf="!isMobile">
+            <a class="mailingList" mat-raised-button href="https://jaaye.ck.page/subscribe2" target="_blank">Mailing List</a>
+          </div>
+          <div *ngIf="isMobile">
+            <nav>
+              <div class="ham-menu" (click)="toggleMenuActive()" [ngClass]="{active: menuActive}">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </nav>
+            <div class="off-screen-menu" [ngClass]="{active: menuActive}">
+              <ul>
+                <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Home</a></li>
+                  <li><a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>About</a></li>
+                  <li><a routerLink="/music" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Music</a></li>
+                  <li><a routerLink="/calendar" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Calendar</a></li>
+                  <li><a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Contact</a></li>
+                  <li><a href="https://linktr.ee/jaaye" target="_blank">Linktree</a></li>
+              </ul>
+              <a class="mailingList" style="margin-top:100px;" mat-raised-button href="https://jaaye.ck.page/subscribe2" target="_blank">Mailing List</a>
+            </div>
+          </div>
+        </div>
     </mat-toolbar-row>
-    <mat-toolbar-row [ngClass]="{max: !scrolled, min: scrolled}"> 
+    <mat-toolbar-row *ngIf="!isMobile"> 
       <div style="margin: auto;">  
-        <nav class="max"> <!--[ngClass]="{max: !scrolled, min: scrolled}">-->
+        <nav>
           <ul>
             <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Home</a></li>
             <li><a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>About</a></li>
@@ -31,12 +51,12 @@
 </div>
 <div style="height: 100%;">
   <router-outlet></router-outlet>
-  <div class="primaryLightBg" style="height: 10px;"></div>
+  <div class="primaryDarkBg" style="height: 10px;"></div>
   <div class="footerContainer">
-    <div class="primaryMediumBg footerBox">
-      <div style="padding-left: 10%;">
-        <span class="primaryLight footerTitle">Jaaye</span>
-        <nav class="stroke" [ngClass]="{max: !scrolled, min: scrolled}">
+    <div class="primaryLightBg footerBox">
+      <div>
+        <span class="primaryDark footerTitle">Jaaye</span>
+        <nav>
           <ul>
             <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Home</a></li>
             <li><a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>About</a></li>
@@ -48,6 +68,6 @@
         </nav>
       </div>     
     </div>
-    <div class="primaryDarkBg footerBox"></div>
+    <div class="secondaryLightBg footerBox2"></div>
   </div>
 </div>

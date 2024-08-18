@@ -1,1 +1,54 @@
-<p>calendar works!</p>
+<div class="">
+    <div class="secondaryLightBg" style="padding-top:150px; padding-bottom: 20px;">
+        <div class="eventContainer">
+            <div class="header">Calendar</div>
+            <div class="secondaryHeader" *ngIf="upcomingEvents.length > 0">Important dates for Jaaye</div>
+            <div class="secondaryHeader" *ngIf="upcomingEvents.length == 0">Check back later for more</div>
+            <table>
+                <tbody>
+                    <tr *ngFor="let event of upcomingEvents">
+                        <td class="calendarCol calendarImg"><img src="{{ event.image }}"></td>
+                        <td class="calendarCol calendarDate">
+                            <div class="date primaryDark day">{{ event.date?.day}}</div>
+                            <div class="date month">{{ event.date?.month }}<br>{{ event.date?.year }}</div>
+                        </td>
+                        <td class="calendarCol calendarInfo">
+                            <div *ngIf="event.isEvent && event.description != ''" class="details"><span class="detailsHeader">Event:</span><br>{{ event.description }}</div>
+                            <div *ngIf="event.isRelease" class="details"><span class="detailsHeader">Release:</span><br>{{ event.description }}</div>
+                            <div *ngIf="event.isEvent && event.description == ''" class="details"><span class="detailsHeader">Venue:</span><br>{{ event.details?.venue }}</div>
+                        </td>
+                        <td class="calendarCol calendarInfo">
+                            <div *ngIf="event.isEvent && event.details?.url != undefined" class="details"><span class="detailsHeader">Info:</span><br>{{ event.details?.url }}</div>
+                            <div *ngIf="event.isEvent && event.details?.additionalInfo != undefined" class="details"><span class="detailsHeader">Info:</span><br>{{ event.details?.additionalInfo }}</div>
+                        </td>
+                    </tr>             
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="primaryLightBg" style="padding-top:15px;">
+        <div class="eventContainer">
+            <div class="header">Past Events</div>
+            <table>
+                <tbody>
+                    <tr *ngFor="let event of pastEvents">
+                        <td class="calendarCol calendarImg"><img src="{{ event.image }}"></td>
+                        <td class="calendarCol calendarDate">
+                            <div class="date primaryDark day">{{ event.date?.day}}</div>
+                            <div class="date month">{{ event.date?.month }}<br>{{ event.date?.year }}</div>
+                        </td>
+                        <td class="calendarCol calendarInfo">
+                            <div *ngIf="event.isEvent && event.description != ''" class="details"><span class="detailsHeader">Event:</span><br>{{ event.description }}</div>
+                            <div *ngIf="event.isRelease" class="details"><span class="detailsHeader">Release:</span><br>{{ event.description }}</div>
+                            <div *ngIf="event.isEvent && event.description == ''" class="details"><span class="detailsHeader">Venue:</span><br>{{ event.details?.venue }}</div>
+                        </td>
+                        <td class="calendarCol calendarInfo">
+                            <div *ngIf="event.isEvent && event.details?.url != undefined" class="details"><span class="detailsHeader">Info:</span><br>{{ event.details?.url }}</div>
+                            <div *ngIf="event.isEvent && event.details?.additionalInfo != undefined" class="details"><span class="detailsHeader">Info:</span><br>{{ event.details?.additionalInfo }}</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

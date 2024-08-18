@@ -1,0 +1,31 @@
+[
+    {
+        "description": "FitzFest Festival",
+        "date": {
+            "day": "20",
+            "month": "July",
+            "year": "2024"
+        },
+        "details": {
+            "additionalInfo": "@FitzFest on Instagram"
+        },
+        "image": "../../images/jaaye2024-initiative.png",
+        "isEvent": true,
+        "isRelease": false
+    },
+    {
+        "description": "",
+        "date": {
+            "day": "1",
+            "month": "June",
+            "year": "2024"
+        },
+        "details": {
+            "venue": "The Ruckus Room",
+            "url": "ruckuscafe.com"
+        },
+        "image": "../../images/Jaaye-Ruckus-Room-Fl.png",
+        "isEvent": true,
+        "isRelease": false
+    }
+]

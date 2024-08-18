@@ -19,17 +19,13 @@ body, html {
 h1, h2, h3, h4, h5 {
     font-family: "Lato", sans-serif !important;
     font-weight: 300;
-    font-style: italic !important;
+    //font-style: italic !important;
 }
-
-a, a:visited { text-decoration: none !important; color: $secondaryDark; text-shadow: 0.5px 0.5px 2px $primaryDark; }
-a:hover { text-decoration: none !important; color: $secondaryDark !important; text-shadow: 0.5px 0.5px 1px $primaryDark !important; }
-.active { text-decoration: none !important; color: $primaryDark !important; text-shadow: 0.5px 0.5px 1px $secondaryDark !important; border-bottom: 2px solid $primaryLight;}
 
 .title {
     font-family: "source-sans-pro", sans-serif !important;
     font-weight: 300 !important;
-    font-style: italic !important;
+    //font-style: italic !important;
 }
 
 .container {
@@ -37,6 +33,13 @@ a:hover { text-decoration: none !important; color: $secondaryDark !important; te
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.line {
+    height: 0;
+    border: 1px solid $secondaryLight;
+    margin: 3px;
+    display:inline-block;
 }
 
 .secondaryLight { color: $secondaryLight; }
@@ -62,5 +65,14 @@ Fonts:
 Title Font: Source Sans Pro
 Paragraph Font: Lato
 */
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+a, a:visited, .menu { text-decoration: none !important; color: $secondaryDark;  }
+a:hover { text-decoration: none !important; color: $secondaryDark !important; text-shadow: 0.5px 0.5px 1px $primaryDark !important; }
+.active { text-decoration: none !important; color: $secondaryDark !important; text-shadow: 0.5px 0.5px 1px $primaryDark !important; border-bottom: 2px solid $primaryLight;}
+
+@media (max-width: 1000px) {
+    .active { border-bottom: none; }
+}
