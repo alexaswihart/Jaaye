@@ -8,7 +8,8 @@ import { CommonModule } from '@angular/common';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { MusicComponent } from './music/music.component';
@@ -16,6 +17,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { ContactComponent } from './contact/contact.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -35,7 +37,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatTabsModule,
     MatButtonModule,
     MatMenuModule,
-    MatGridListModule
+    MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration(),

@@ -1,0 +1,67 @@
+@import '../../styles.scss';
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+.background {
+    background-image: url("../../images/Jaaye Photoshoot 2 (59 of 67).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.transparentBg {
+    background-color: #000000b9;
+}
+
+.formContainer {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+form {
+    margin: auto;
+}
+
+.formField {
+    display: block;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    width: 400px;
+    margin: auto;
+}
+
+input[type=text], input[type=email], textarea {
+    height: 40px;
+    padding-left: 10px;
+    background-color: $transparent;
+    width: 400px;
+    font-weight: 500 !important;
+    border: 2px solid $primaryMedium;
+    border-radius: 4px;
+    color: $secondaryDark !important;
+    font-size: 15px;
+
+    :focus {
+        border: 4px solid $primaryMedium;
+    }
+}
+
+textarea {
+    padding-top: 10px;
+}
+
+::placeholder {
+    color: $secondaryDark !important;
+}
+
+a.submit {
+    background-color: $primaryDark !important;
+    color: $secondaryDark !important;
+    text-shadow: none !important;
+    height: 50px;
+}
+
+a:hover.submit {
+    background-color: $transparent !important;
+    color: $secondaryDark !important;
+}

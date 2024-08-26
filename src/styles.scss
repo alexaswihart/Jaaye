@@ -16,7 +16,7 @@ body, html {
 
 .mat-h1, .mat-h2, .mat-h3, .mat-h4, .mat-h5,
 .mat-body-1, .mat-subtitle-1, .mat-typography, .mat-headline-5,
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, input, textarea {
     font-family: "Lato", sans-serif !important;
     font-weight: 300;
     //font-style: italic !important;
@@ -33,18 +33,18 @@ h1, h2, h3, h4, h5 {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .line {
     height: 0;
-    border: 1px solid $secondaryLight;
     margin: 3px;
     display:inline-block;
 }
 
 .secondaryLight { color: $secondaryLight; }
 .primaryLight { color: $primaryLight; }
-.primaryMedium { background-color: $primaryMedium; }
+.primaryMedium { color: $primaryMedium; }
 .primaryDark { color: $primaryDark; }
 .secondaryDark { color: $secondaryDark; }
 

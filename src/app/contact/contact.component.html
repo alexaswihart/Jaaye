@@ -1,1 +1,35 @@
-<p>contact works!</p>
+<div style="text-align: center;" class="background">
+    <div class="transparentBg">
+        <div style="padding-top: 200px;">
+            <h1 class="primaryMedium" style="font-weight: 400; font-size: 35px;">Contact us!</h1>
+            <h2 class="primaryLight" style="font-weight: 400; font-size: 18px;">Business inquiries only</h2>
+        </div>
+        <div class="formContainer">
+            <form [formGroup]="contactForm">
+                <div class="formField">
+                    <input type="text" placeholder="First Name" required formControlName="firstName"/> 
+                </div>
+                <div class="formField">
+                    <input type="text" placeholder="Last Name" required formControlName="lastName"/>
+                </div>
+                <div class="formField">
+                    <input type="email" placeholder="Your Email" required formControlName="email"/>
+                </div>
+                <div class="formField">
+                    <input type="text" placeholder="Email Subject" required formControlName="subject"/>
+                </div>
+                <div class="formField">
+                    <textarea placeholder="Your Message" required style="height: 100px;" formControlName="message"></textarea>
+                </div>
+                <div class="formField" style="display: flex;">
+                    <input type="checkbox" required style="margin-left:10px;">
+                    <span class="primaryLight" style="font-size: 10px;">By checking this box and submitting your information, you are granting us permission to email you. You may unsubscribe at any time.</span>
+                </div>            
+            </form>         
+            <a class="submit" style="height: 60px;" mat-raised-button (click)="submit()" target="_blank">Send Message</a>
+        </div>
+    </div>
+    <div class="primaryDarkBg" style="height:200px;">
+
+    </div>
+</div>

@@ -5,47 +5,56 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    padding-left: 100px;
 }
 
 .container {
-    justify-content: left !important;
+    justify-content: center !important;
 }
 
 .readMoreText {
+    color: $primaryDark;
     font-size: 20px;
     text-shadow: 0.5px 0.5px 1px $secondaryDark !important;
+    position: relative;
 }
 
 a.readMore {
-    background-color: $transparent !important;
-    color: $secondaryDark !important;
-    height: 75px;
-    font-size: large;
-    text-shadow: 0.5px 0.5px 1px $secondaryLight !important;
+    background-color: $primaryDark !important;
+    color: $primaryLight !important;
+    height: 50px;
+    text-shadow: 0.5px 0.5px 1px $secondaryDark !important;
 }
 
 a:hover.readMore {
     background-color: $transparent !important;
-    color: $secondaryLight !important;
+    color: $primaryDark !important;
     text-shadow: 0.5px 0.5px 1px $secondaryDark !important;
+}
+
+.readMoreContainer {
+    padding: 20px;
+    background-color: $transparent;
+    border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 .line {
     width: 150px;
+    position: relative;
+    border: 1px solid $primaryDark;
 }
 
 .buttonContainer {
-    position: absolute;
-    margin-top: 100px;
+    position: relative;
+    margin-top: 20px;
 }
 
-a.button {
+/* a.button {
     background-color: $primaryLight !important;
     color: $primaryDark !important;
     text-shadow: none !important;
     height: 50px;
-}
+} */
 
 a:hover.button {
     background-color: $transparent !important;
@@ -59,34 +68,12 @@ a:hover.button {
     padding: 20px;
 }
 
-img.crashLanding {
-    width: 100%;
-    min-width: 200px;
-    margin: auto;
-}
-
-img.intiative {
-    width: 100%;
-    min-width: 200px;
-    max-width: 600px;
-    margin: auto;
-    border-radius: 25px;
-}
-
 .shortLine {
     width: 50px !important;
     height: 0;
-    border: 1px solid $secondaryLight;
+    border: 1px solid $secondaryDark;
     margin: 3px;
     display:inline-block;
-}
-
-.stacked {
-    position: relative;
-}
-
-.notStacked {
-    display: inline-flex;
 }
 
 a.patreon {
@@ -98,17 +85,5 @@ a.patreon {
 }
 
 @media (max-width: 1000px) {
-    .readMoreContainer {
-        height: 100%;
-        vertical-align: top;
-        padding-top: 100%; 
-    }
 
-    // .infoContainer {
-    //     height: 450px;
-    //     width: 0px;
-    //     display: flex;
-    //     margin: auto;
-    //     padding: 20px;
-    // }
 }
