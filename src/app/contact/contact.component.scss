@@ -46,6 +46,11 @@ input[type=text], input[type=email], textarea {
     }
 }
 
+input.invalid, textarea.invalid {
+    outline: 2px solid red;
+    border-radius: 5px;
+}
+
 textarea {
     padding-top: 10px;
 }

@@ -5,28 +5,30 @@
             <h2 class="primaryLight" style="font-weight: 400; font-size: 18px;">Business inquiries only</h2>
         </div>
         <div class="formContainer">
+            <i class="fa-brands fa-x-twitter"></i>
             <form [formGroup]="contactForm">
                 <div class="formField">
-                    <input type="text" placeholder="First Name" required formControlName="firstName"/> 
+                    <input [ngClass]="{invalid: !contactForm.controls['firstName'].valid && submitted}" type="text" placeholder="First Name" required formControlName="firstName"/> 
                 </div>
                 <div class="formField">
-                    <input type="text" placeholder="Last Name" required formControlName="lastName"/>
+                    <input [ngClass]="{invalid: !contactForm.controls['lastName'].valid && submitted}" type="text" placeholder="Last Name" required formControlName="lastName"/>
                 </div>
                 <div class="formField">
-                    <input type="email" placeholder="Your Email" required formControlName="email"/>
+                    <input [ngClass]="{invalid: !contactForm.controls['email'].valid && submitted}" type="email" placeholder="Your Email" required formControlName="email"/>
                 </div>
                 <div class="formField">
-                    <input type="text" placeholder="Email Subject" required formControlName="subject"/>
+                    <input [ngClass]="{invalid: !contactForm.controls['subject'].valid && submitted}" type="text" placeholder="Email Subject" required formControlName="subject"/>
                 </div>
                 <div class="formField">
-                    <textarea placeholder="Your Message" required style="height: 100px;" formControlName="message"></textarea>
+                    <textarea [ngClass]="{invalid: !contactForm.controls['message'].valid && submitted}" placeholder="Your Message" required style="height: 100px;" formControlName="message"></textarea>
                 </div>
                 <div class="formField" style="display: flex;">
-                    <input type="checkbox" required style="margin-left:10px;">
+                    <input [ngClass]="{invalid: !contactForm.controls['permission'].valid && submitted}" type="checkbox" required style="margin-left:10px;" formControlName="permission">
                     <span class="primaryLight" style="font-size: 10px;">By checking this box and submitting your information, you are granting us permission to email you. You may unsubscribe at any time.</span>
-                </div>            
-            </form>         
-            <a class="submit" style="height: 60px;" mat-raised-button (click)="submit()" target="_blank">Send Message</a>
+                </div> 
+                <a class="submit" style="height: 60px;" mat-raised-button (click)="submit()" target="_blank">Send Message</a>
+                <!-- <p><a href="mailto:{{mailTo}}">Send email</a></p> -->
+            </form>                  
         </div>
     </div>
     <div class="primaryDarkBg" style="height:200px;">
