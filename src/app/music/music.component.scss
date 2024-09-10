@@ -1,0 +1,67 @@
+@import '../../styles.scss';
+
+.background {
+    background-image: url("../../images/Jaaye Photoshoot 2 (14 of 67).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.background2 {
+    background-image: url("../../images/Jaaye Photoshoot 2 (38 of 67).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    opacity: 0.5;
+}
+
+.header {
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: $primaryDark;
+    font-weight: bold;
+}
+
+.musicContainer {
+    width:80%;
+    margin: auto;
+    padding-bottom:50px;
+    text-align: center;
+}
+
+table {
+    border-spacing: 20px;
+    margin:auto;
+}
+
+td {
+    padding: 10px;
+}
+
+td:hover {
+    background-color: $primaryDark;
+    opacity: 0.8;
+}
+
+@media (min-width: 1001px) {
+    .musicImg {
+        width: 200px;
+    }
+    
+    .musicName {
+        font-size: 20px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .musicImg {
+        width: 100px;
+    }
+    
+    .musicName {
+        font-size: 15px;
+        margin: 10px;
+    }
+}
